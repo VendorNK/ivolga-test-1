@@ -28,13 +28,11 @@ if ($page == '') {
     $anchor = $pre_last_word . ' ' . $last_word;
     $excerpt = implode(' ', $arr_b) . " <a href=\"{$link}\">{$anchor} ...</a>";
 
-    $content = $excerpt;
-
+    $content = '<p>' . $excerpt . '</p>';
 } else {
 
-    // Выводим полный текст новости
+    // Полный текст новости
     $content = ${$page};
-
 }
 
 ?>
@@ -60,7 +58,7 @@ if ($page == '') {
 
 <body>
     <div class="container">
-        <p><?= $content ?></p>
+        <?= $content ?>
     </div>
 </body>
 
