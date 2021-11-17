@@ -29,9 +29,11 @@ if ($page == '') {
     $excerpt = implode(' ', $arr_b) . " <a href=\"{$link}\">{$anchor} ...</a>";
 
     $content = $excerpt;
+
 } else {
 
     $content = ${$page};
+    
 }
 
 ?>
