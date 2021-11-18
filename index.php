@@ -39,7 +39,6 @@ if ($page == '') {
 
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,13 +52,10 @@ if ($page == '') {
             margin: 0 auto;
         }
     </style>
-
 </head>
-
 <body>
     <div class="container">
         <?= $content ?>
     </div>
 </body>
-
 </html>
